@@ -9,3 +9,9 @@
 [dev]
   command = "npm run dev"
   port = 3000
+
+# Redirect all non-file routes to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
