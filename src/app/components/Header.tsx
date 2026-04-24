@@ -68,7 +68,7 @@ export function Header({ currentPath }: { currentPath: string }) {
                 {item.label}
               </a>
             ))}
-            <a href="mailto:geosirainc@gmail.com" className="px-6 py-2.5 bg-gradient-to-r from-[#3FA0D6] to-[#2F80B9] text-white rounded-lg hover:shadow-lg transition-all">
+            <a href="mailto:infos@ci-ville.ca" className="px-6 py-2.5 bg-gradient-to-r from-[#3FA0D6] to-[#2F80B9] text-white rounded-lg hover:shadow-lg transition-all">
               {t('nav.contact')}
             </a>
             <LanguageSwitcher />
@@ -102,7 +102,7 @@ export function Header({ currentPath }: { currentPath: string }) {
               <div className="py-2">
                 <LanguageSwitcher />
               </div>
-              <a href="mailto:geosirainc@gmail.com" onClick={closeMobileMenu} className="px-6 py-2.5 bg-gradient-to-r from-[#3FA0D6] to-[#2F80B9] text-white rounded-lg hover:shadow-lg transition-all mt-2 text-center">
+              <a href="mailto:infos@ci-ville.ca" onClick={closeMobileMenu} className="px-6 py-2.5 bg-gradient-to-r from-[#3FA0D6] to-[#2F80B9] text-white rounded-lg hover:shadow-lg transition-all mt-2 text-center">
                 {t('nav.contact')}
               </a>
             </div>

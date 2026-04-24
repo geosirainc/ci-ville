@@ -101,8 +101,8 @@ export function Footer({ currentPath }: { currentPath: string }) {
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:geosirainc@gmail.com" className="text-white/80 hover:text-white transition-colors">
-                  geosirainc@gmail.com
+                <a href="mailto:infos@ci-ville.ca" className="text-white/80 hover:text-white transition-colors">
+                  infos@ci-ville.ca
                 </a>
               </li>
               <li className="flex items-center gap-2">

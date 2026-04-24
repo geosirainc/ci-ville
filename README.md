@@ -92,7 +92,7 @@ Environment variables needed:
 ## Contact
 
 - **Phone**: +1 438 357 2118
-- **Email**: geosirainc@gmail.com
+- **Email**: infos@ci-ville.ca
 - **Organization**: GEOSIRA INC.
 
 ## License
