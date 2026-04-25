@@ -50,6 +50,7 @@ const translations: Record<Language, Record<string, string>> = {
     'tools.webHoverData': 'Téléchargez et intégrez vos données dans vos processus internes.',
     'tools.android': 'Télécharger l’application Android',
     'tools.apple': 'Télécharger l’application Apple',
+    'tools.comingSoon': 'Bientôt disponible sur cette plateforme',
     'tools.mobilePage': 'Voir la page Application mobile',
     'tools.webPage': 'Voir la page Application web',
 
@@ -216,6 +217,7 @@ const translations: Record<Language, Record<string, string>> = {
     'tools.webHoverData': 'Download and integrate your data into your internal processes.',
     'tools.android': 'Download the Android app',
     'tools.apple': 'Download the Apple app',
+    'tools.comingSoon': 'Coming soon to this platform',
     'tools.mobilePage': 'View the mobile app page',
     'tools.webPage': 'View the web app page',
 
