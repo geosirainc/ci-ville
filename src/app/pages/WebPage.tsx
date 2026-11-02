@@ -8,11 +8,11 @@ export function WebPage() {
 
   return (
     <main>
-      <section className="pt-28 pb-12 bg-gradient-to-br from-[#17374a] via-[#1F6FA5] to-[#2F80B9] text-white overflow-hidden">
+      <section className="pt-28 pb-12 bg-[#1F6FA5] text-white overflow-hidden">
         <div className="max-w-[1920px] mx-auto px-8 sm:px-12 lg:px-16 xl:px-20">
           <div className="max-w-4xl">
             <motion.div
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 mb-6"
+              className="inline-flex items-center gap-2 rounded-none border border-white px-4 py-2 mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -29,7 +29,7 @@ export function WebPage() {
               {t('web.pageTitle')}
             </motion.h1>
             <motion.p
-              className="text-lg lg:text-xl text-white/85 max-w-3xl leading-relaxed"
+              className="text-lg lg:text-xl text-white/90 max-w-3xl leading-relaxed"
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}

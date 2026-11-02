@@ -49,11 +49,11 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            <a href="/#outils-collaboratifs" className="px-8 py-4 bg-white text-[#2F80B9] rounded-lg hover:shadow-2xl transition-all flex items-center gap-2 group">
+            <a href="/#outils-collaboratifs" className="px-8 py-4 bg-white text-[#1F6FA5] rounded-none border border-white hover:bg-[#F4F6F8] transition-colors flex items-center gap-2 group">
               <span>{t('hero.cta')}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="mailto:info@ci-ville.com" className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all">
+            <a href="mailto:infos@ci-ville.ca?subject=Demande%20de%20d%C3%A9monstration%20CI-VILLE" className="px-8 py-4 bg-[#1F6FA5] border border-white text-white rounded-none hover:bg-[#173149] transition-colors">
               {t('hero.demo')}
             </a>
           </motion.div>

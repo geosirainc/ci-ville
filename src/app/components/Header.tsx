@@ -32,6 +32,12 @@ export function Header({ currentPath }: { currentPath: string }) {
       label: t('nav.impact'),
       isActive: currentPath === '/impact-ci-ville',
       activeClassName: 'border-[#4E9A72] text-[#4E9A72] dark:border-[#67B48B] dark:text-[#8FD0AC]'
+    },
+    {
+      href: '/municipalites-fondatrices',
+      label: t('nav.founders'),
+      isActive: currentPath === '/municipalites-fondatrices',
+      activeClassName: ''
     }
   ];
 
@@ -39,12 +45,13 @@ export function Header({ currentPath }: { currentPath: string }) {
     setMobileMenuOpen(false);
   };
 
-  const navLinkClassName = (isActive: boolean, activeClassName: string) =>
+  // Page active : fond plein et texte blanc ; les autres : texte seul, bordure au survol
+  const navLinkClassName = (isActive: boolean, _activeClassName: string) =>
     [
-      'rounded-full border px-4 py-2 transition-colors',
+      'rounded-none border px-4 py-2 transition-colors',
       isActive
-        ? activeClassName
-        : 'border-transparent text-[#4A4A4A] dark:text-[#e5e5e5] hover:border-[#2F80B9]/35 hover:text-[#2F80B9] dark:hover:border-[#3FA0D6]/40 dark:hover:text-[#3FA0D6]'
+        ? 'border-[#1F6FA5] bg-[#1F6FA5] text-white'
+        : 'border-transparent text-[#4A4A4A] dark:text-[#e5e5e5] hover:border-[#1F6FA5] hover:text-[#1F6FA5] dark:hover:border-[#3FA0D6] dark:hover:text-[#3FA0D6]'
     ].join(' ');
 
   return (
@@ -57,7 +64,7 @@ export function Header({ currentPath }: { currentPath: string }) {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden xl:flex items-center gap-2 whitespace-nowrap">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -68,7 +75,7 @@ export function Header({ currentPath }: { currentPath: string }) {
                 {item.label}
               </a>
             ))}
-            <a href="mailto:infos@ci-ville.ca" className="px-6 py-2.5 bg-gradient-to-r from-[#3FA0D6] to-[#2F80B9] text-white rounded-lg hover:shadow-lg transition-all">
+            <a href="mailto:infos@ci-ville.ca?subject=Demande%20de%20d%C3%A9monstration%20CI-VILLE" className="px-6 py-2.5 bg-[#1F6FA5] text-white rounded-none hover:shadow-lg transition-all">
               {t('nav.contact')}
             </a>
             <LanguageSwitcher />
@@ -77,7 +84,7 @@ export function Header({ currentPath }: { currentPath: string }) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-[#2F80B9] dark:text-[#3FA0D6]"
+            className="xl:hidden p-2 text-[#2F80B9] dark:text-[#3FA0D6]"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -86,7 +93,7 @@ export function Header({ currentPath }: { currentPath: string }) {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-200 dark:border-white/10">
+          <nav className="xl:hidden py-4 border-t border-gray-200 dark:border-white/10">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
@@ -102,7 +109,7 @@ export function Header({ currentPath }: { currentPath: string }) {
               <div className="py-2">
                 <LanguageSwitcher />
               </div>
-              <a href="mailto:infos@ci-ville.ca" onClick={closeMobileMenu} className="px-6 py-2.5 bg-gradient-to-r from-[#3FA0D6] to-[#2F80B9] text-white rounded-lg hover:shadow-lg transition-all mt-2 text-center">
+              <a href="mailto:infos@ci-ville.ca?subject=Demande%20de%20d%C3%A9monstration%20CI-VILLE" onClick={closeMobileMenu} className="px-6 py-2.5 bg-[#1F6FA5] text-white rounded-none hover:shadow-lg transition-all mt-2 text-center">
                 {t('nav.contact')}
               </a>
             </div>

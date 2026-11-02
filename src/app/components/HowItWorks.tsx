@@ -77,14 +77,14 @@ export function HowItWorks() {
             return (
               <motion.div
                 key={step.title}
-                className={`rounded-2xl bg-white dark:bg-[#1a1a1a] p-6 shadow-sm border-2 ${cardBorderClasses[index]}`}
+                className={`rounded-none bg-white dark:bg-[#1a1a1a] p-6 shadow-sm border-2 ${cardBorderClasses[index]}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
               >
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#3FA0D6] to-[#2F80B9] flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-none bg-[#1F6FA5] flex items-center justify-center">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <span className="text-sm text-[#2F80B9] dark:text-[#3FA0D6]">0{index + 1}</span>

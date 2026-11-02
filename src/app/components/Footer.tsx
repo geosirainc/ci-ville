@@ -1,4 +1,4 @@
-import { Mail, Phone, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Mail, Phone, Facebook, Linkedin } from 'lucide-react';
 import logoComplete from '../../assets/1a73cb7aee8529059d3ebc897eca7cef8ed70b09.png';
 import { useLanguage } from '../contexts/LanguageContext';
 import { motion } from 'motion/react';
@@ -68,23 +68,23 @@ export function Footer({ currentPath }: { currentPath: string }) {
             <h4 className="text-lg mb-4">{t('footer.resources')}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
+                <a href="/municipalites-fondatrices" className="text-white/80 hover:text-white transition-colors">
+                  {t('footer.founders')}
+                </a>
+              </li>
+              <li>
+                <a href="/documents" className="text-white/80 hover:text-white transition-colors">
                   {t('footer.documentation')}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
-                  {t('footer.help')}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
-                  {t('footer.pricing')}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
+                <a href={t('footer.privacyUrl')} className="text-white/80 hover:text-white transition-colors">
                   {t('footer.privacy')}
+                </a>
+              </li>
+              <li>
+                <a href={t('footer.termsUrl')} className="text-white/80 hover:text-white transition-colors">
+                  {t('footer.terms')}
                 </a>
               </li>
             </ul>
@@ -115,13 +115,10 @@ export function Footer({ currentPath }: { currentPath: string }) {
             
             {/* Social Media */}
             <div className="flex gap-3 mt-6">
-              <a href="#" aria-label="Facebook" title="Facebook" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61591631753943" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" className="w-9 h-9 rounded-none border border-white text-white flex items-center justify-center hover:bg-white hover:text-[#1F6FA5] transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" aria-label="Twitter" title="Twitter" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a href="#" aria-label="LinkedIn" title="LinkedIn" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="https://www.linkedin.com/company/ci-villepage/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" className="w-9 h-9 rounded-none border border-white text-white flex items-center justify-center hover:bg-white hover:text-[#1F6FA5] transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
@@ -141,7 +138,7 @@ export function Footer({ currentPath }: { currentPath: string }) {
               {t('footer.copyright')}
             </p>
             <p className="text-white/80 text-sm text-center md:text-right">
-              {t('footer.ownership')} <span className="text-white">GEOSIRA INC.</span>
+              {t('footer.ownership')}
             </p>
           </div>
         </motion.div>

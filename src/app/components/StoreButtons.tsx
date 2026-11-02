@@ -10,6 +10,9 @@ type StoreButtonsProps = {
 
 type ActiveStore = 'android' | 'apple' | null;
 
+// L'application iOS n'est pas encore publiée : le bouton Apple garde le message « bientôt disponible »
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=app.civille.ca';
+
 export function StoreButtons({ className = '', imageClassName = '' }: StoreButtonsProps) {
   const { t } = useLanguage();
   const [activeStore, setActiveStore] = useState<ActiveStore>(null);
@@ -37,7 +40,7 @@ export function StoreButtons({ className = '', imageClassName = '' }: StoreButto
     <span
       role="status"
       aria-live="polite"
-      className={`pointer-events-none absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-lg bg-[#2F80B9] px-4 py-2 text-sm text-white shadow-lg transition-all duration-200 ${
+      className={`pointer-events-none absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-none bg-[#2F80B9] px-4 py-2 text-sm text-white shadow-lg transition-all duration-200 ${
         activeStore === store ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'
       }`}
     >
@@ -48,19 +51,19 @@ export function StoreButtons({ className = '', imageClassName = '' }: StoreButto
   return (
     <div className={className}>
       <div className="relative inline-flex justify-center">
-        <button
-          type="button"
-          onClick={() => handleClick('android')}
+        <a
+          href={PLAY_STORE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label={t('tools.android')}
-          className="group inline-flex justify-center rounded-[1.75rem] bg-transparent p-0 transition-transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3FA0D6] focus-visible:ring-offset-2"
+          className="group inline-flex justify-center rounded-none bg-transparent p-0 transition-transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3FA0D6] focus-visible:ring-offset-2"
         >
           <img
             src={androidIcon}
             alt={t('tools.android')}
             className={`w-full max-w-[276px] h-auto object-contain drop-shadow-[0_16px_30px_rgba(47,128,185,0.2)] group-hover:drop-shadow-[0_20px_34px_rgba(47,128,185,0.28)] transition-all ${imageClassName}`.trim()}
           />
-        </button>
-        {renderTooltip('android')}
+        </a>
       </div>
 
       <div className="relative inline-flex justify-center">
@@ -68,7 +71,7 @@ export function StoreButtons({ className = '', imageClassName = '' }: StoreButto
           type="button"
           onClick={() => handleClick('apple')}
           aria-label={t('tools.apple')}
-          className="group inline-flex justify-center rounded-[1.75rem] bg-transparent p-0 transition-transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3FA0D6] focus-visible:ring-offset-2"
+          className="group inline-flex justify-center rounded-none bg-transparent p-0 transition-transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3FA0D6] focus-visible:ring-offset-2"
         >
           <img
             src={appleIcon}

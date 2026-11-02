@@ -6,6 +6,8 @@ import { HomePage } from './pages/HomePage';
 import { ImpactPage } from './pages/ImpactPage';
 import { MobilePage } from './pages/MobilePage';
 import { WebPage } from './pages/WebPage';
+import { FoundersPage } from './pages/FoundersPage';
+import { DocumentsPage } from './pages/DocumentsPage';
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/$/, '') || '/';
@@ -18,6 +20,10 @@ export default function App() {
     page = <WebPage />;
   } else if (pathname === '/impact-ci-ville') {
     page = <ImpactPage />;
+  } else if (pathname === '/municipalites-fondatrices') {
+    page = <FoundersPage />;
+  } else if (pathname === '/documents') {
+    page = <DocumentsPage />;
   }
 
   return (

@@ -46,7 +46,7 @@ export function CollaborativeTools() {
 
         <div className="grid xl:grid-cols-2 gap-6">
           <motion.article
-            className="group relative overflow-hidden rounded-[2rem] min-h-[420px] p-6 lg:p-8 flex flex-col justify-between text-white"
+            className="group relative overflow-hidden rounded-none min-h-[420px] p-6 lg:p-8 flex flex-col justify-between text-white"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
@@ -59,7 +59,7 @@ export function CollaborativeTools() {
             <div className="relative z-10 flex-1">
               <div className="flex items-center justify-between gap-4 mb-6">
                 <img src={logoComplete} alt="CI-VILLE" className="h-10 w-auto brightness-0 invert" />
-                <div className="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
+                <div className="w-12 h-12 rounded-none bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
                   <Smartphone className="w-7 h-7" />
                 </div>
               </div>
@@ -76,7 +76,7 @@ export function CollaborativeTools() {
             <div className="relative z-10 flex flex-wrap gap-4 items-center w-full justify-end">
               <a
                 href="/application-mobile"
-                className="ml-auto inline-flex items-center gap-2 rounded-xl bg-white/14 border border-white/25 px-4 py-2 text-sm text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 group-hover:bg-white group-hover:text-[#1F6FA5]"
+                className="ml-auto inline-flex items-center gap-2 rounded-none bg-white/14 border border-white/25 px-4 py-2 text-sm text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 group-hover:bg-white group-hover:text-[#1F6FA5]"
               >
                 <span>{t('mobile.learnMore')}</span>
                 <ArrowRight className="w-4 h-4" />
@@ -85,7 +85,7 @@ export function CollaborativeTools() {
           </motion.article>
 
           <motion.article
-            className="group relative overflow-hidden rounded-[2rem] min-h-[420px] p-6 lg:p-8 flex flex-col justify-between text-white"
+            className="group relative overflow-hidden rounded-none min-h-[420px] p-6 lg:p-8 flex flex-col justify-between text-white"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
@@ -98,7 +98,7 @@ export function CollaborativeTools() {
             <div className="relative z-10 flex-1">
               <div className="flex items-center justify-between gap-4 mb-6">
                 <img src={logoComplete} alt="CI-VILLE" className="h-10 w-auto brightness-0 invert" />
-                <div className="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
+                <div className="w-12 h-12 rounded-none bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
                   <Monitor className="w-7 h-7" />
                 </div>
               </div>
@@ -113,7 +113,7 @@ export function CollaborativeTools() {
             </div>
 
             <div className="relative z-10 flex w-full justify-end">
-              <a href="/application-web" className="inline-flex items-center gap-2 rounded-xl bg-white/14 border border-white/25 px-4 py-2 text-sm text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 group-hover:bg-white group-hover:text-[#1F6FA5]">
+              <a href="/application-web" className="inline-flex items-center gap-2 rounded-none bg-white/14 border border-white/25 px-4 py-2 text-sm text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300 group-hover:bg-white group-hover:text-[#1F6FA5]">
                 <span>{t('mobile.learnMore')}</span>
                 <ArrowRight className="w-4 h-4" />
               </a>

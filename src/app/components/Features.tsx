@@ -13,8 +13,8 @@ export function Features() {
       title: t('features.fast'),
       description: t('features.fastDesc'),
       hoverBorderClass: 'hover:border-[#3FA0D6]',
-      hoverStripeClass: 'from-[#5AB3E4] to-[#2F80B9]',
-      iconClass: 'from-[#5AB3E4] to-[#2F80B9]',
+      hoverStripeClass: 'bg-[#2F80B9]',
+      iconClass: 'bg-[#2F80B9]',
       hoverTitleClass: 'group-hover:text-[#2F80B9]',
       hoverSurfaceClass: 'hover:bg-[#F2FAFE] dark:hover:bg-[#102532]'
     },
@@ -23,8 +23,8 @@ export function Features() {
       title: t('features.secure'),
       description: t('features.secureDesc'),
       hoverBorderClass: 'hover:border-[#DD6B4D]',
-      hoverStripeClass: 'from-[#F08A64] to-[#DD6B4D]',
-      iconClass: 'from-[#F08A64] to-[#DD6B4D]',
+      hoverStripeClass: 'bg-[#DD6B4D]',
+      iconClass: 'bg-[#DD6B4D]',
       hoverTitleClass: 'group-hover:text-[#DD6B4D]',
       hoverSurfaceClass: 'hover:bg-[#FFF5F1] dark:hover:bg-[#321A16]'
     },
@@ -33,8 +33,8 @@ export function Features() {
       title: t('features.accessible'),
       description: t('features.accessibleDesc'),
       hoverBorderClass: 'hover:border-[#F28C28]',
-      hoverStripeClass: 'from-[#F6A94B] to-[#F28C28]',
-      iconClass: 'from-[#F6A94B] to-[#F28C28]',
+      hoverStripeClass: 'bg-[#F28C28]',
+      iconClass: 'bg-[#F28C28]',
       hoverTitleClass: 'group-hover:text-[#D97A1F]',
       hoverSurfaceClass: 'hover:bg-[#FFF7EE] dark:hover:bg-[#352313]'
     },
@@ -43,8 +43,8 @@ export function Features() {
       title: t('features.confidential'),
       description: t('features.confidentialDesc'),
       hoverBorderClass: 'hover:border-[#4DAA57]',
-      hoverStripeClass: 'from-[#6AC474] to-[#4DAA57]',
-      iconClass: 'from-[#6AC474] to-[#4DAA57]',
+      hoverStripeClass: 'bg-[#4DAA57]',
+      iconClass: 'bg-[#4DAA57]',
       hoverTitleClass: 'group-hover:text-[#3E8E48]',
       hoverSurfaceClass: 'hover:bg-[#F2FBF3] dark:hover:bg-[#162A19]'
     },
@@ -53,8 +53,8 @@ export function Features() {
       title: t('features.updates'),
       description: t('features.updatesDesc'),
       hoverBorderClass: 'hover:border-[#7B61C9]',
-      hoverStripeClass: 'from-[#9A84DD] to-[#7B61C9]',
-      iconClass: 'from-[#9A84DD] to-[#7B61C9]',
+      hoverStripeClass: 'bg-[#7B61C9]',
+      iconClass: 'bg-[#7B61C9]',
       hoverTitleClass: 'group-hover:text-[#6A50B6]',
       hoverSurfaceClass: 'hover:bg-[#F6F2FE] dark:hover:bg-[#231A34]'
     },
@@ -63,8 +63,8 @@ export function Features() {
       title: t('features.support'),
       description: t('features.supportDesc'),
       hoverBorderClass: 'hover:border-[#14A3A5]',
-      hoverStripeClass: 'from-[#35C0C2] to-[#14A3A5]',
-      iconClass: 'from-[#35C0C2] to-[#14A3A5]',
+      hoverStripeClass: 'bg-[#14A3A5]',
+      iconClass: 'bg-[#14A3A5]',
       hoverTitleClass: 'group-hover:text-[#10898B]',
       hoverSurfaceClass: 'hover:bg-[#EFFCFB] dark:hover:bg-[#142B2B]'
     }
@@ -138,15 +138,15 @@ export function Features() {
             return (
               <motion.div 
                 key={index} 
-                className={`group relative bg-[#F4F6F8] dark:bg-[#262626] rounded-xl p-6 hover:shadow-xl transition-all border border-transparent ${feature.hoverBorderClass} ${feature.hoverSurfaceClass}`}
+                className={`group relative bg-[#F4F6F8] dark:bg-[#262626] rounded-none p-6 hover:shadow-xl transition-all border border-transparent ${feature.hoverBorderClass} ${feature.hoverSurfaceClass}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
               >
-                <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${feature.hoverStripeClass} rounded-t-xl opacity-0 group-hover:opacity-100 transition-opacity`}></div>
+                <div className={`absolute top-0 left-0 w-full h-1 ${feature.hoverStripeClass} rounded-none opacity-0 group-hover:opacity-100 transition-opacity`}></div>
                 
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.iconClass} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                <div className={`w-12 h-12 rounded-none ${feature.iconClass} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 
@@ -175,14 +175,14 @@ export function Features() {
               return (
                 <motion.div
                   key={impact.title}
-                  className="rounded-2xl bg-[#F4F6F8] dark:bg-[#262626] p-6 lg:p-8 border border-[#d9e9f4] dark:border-white/10 shadow-sm"
+                  className="rounded-none bg-[#F4F6F8] dark:bg-[#262626] p-6 lg:p-8 border border-[#d9e9f4] dark:border-white/10 shadow-sm"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 >
                   <div className="flex items-center gap-3 mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#3FA0D6] to-[#2F80B9] flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-none bg-[#1F6FA5] flex items-center justify-center">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-2xl text-[#2F80B9] dark:text-[#3FA0D6]">{impact.title}</h4>

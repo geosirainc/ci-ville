@@ -45,7 +45,7 @@ export function WebPlatform() {
             <div className="relative">
               {/* Browser window */}
               <motion.div 
-                className="bg-white dark:bg-[#1a1a1a] rounded-xl shadow-2xl overflow-hidden"
+                className="bg-white dark:bg-[#1a1a1a] rounded-none shadow-2xl overflow-hidden"
                 initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: true, margin: "-100px" }}
@@ -58,7 +58,7 @@ export function WebPlatform() {
                     <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
                   </div>
-                  <div className="flex-1 bg-white dark:bg-[#1a1a1a] rounded mx-4 px-3 py-1 text-xs text-gray-500 dark:text-gray-300">
+                  <div className="flex-1 bg-white dark:bg-[#1a1a1a] rounded-none mx-4 px-3 py-1 text-xs text-gray-500 dark:text-gray-300">
                     https://plateforme.ci-ville.com
                   </div>
                 </div>
@@ -68,7 +68,7 @@ export function WebPlatform() {
                   {/* Stats cards */}
                   <div className="grid grid-cols-3 gap-2 mb-3">
                     <motion.div 
-                      className="bg-white dark:bg-[#262626] rounded-lg p-3 shadow-sm"
+                      className="bg-white dark:bg-[#262626] rounded-none p-3 shadow-sm"
                       initial={{ opacity: 0, y: -20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-100px" }}
@@ -78,7 +78,7 @@ export function WebPlatform() {
                       <p className="text-xl text-[#2F80B9]">247</p>
                     </motion.div>
                     <motion.div 
-                      className="bg-white dark:bg-[#262626] rounded-lg p-3 shadow-sm"
+                      className="bg-white dark:bg-[#262626] rounded-none p-3 shadow-sm"
                       initial={{ opacity: 0, y: -20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-100px" }}
@@ -88,7 +88,7 @@ export function WebPlatform() {
                       <p className="text-xl text-[#3FA0D6]">38</p>
                     </motion.div>
                     <motion.div 
-                      className="bg-white dark:bg-[#262626] rounded-lg p-3 shadow-sm"
+                      className="bg-white dark:bg-[#262626] rounded-none p-3 shadow-sm"
                       initial={{ opacity: 0, y: -20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-100px" }}
@@ -101,7 +101,7 @@ export function WebPlatform() {
 
                   {/* Platform screenshot */}
                   <motion.div
-                    className="rounded-lg overflow-hidden shadow-md"
+                    className="rounded-none overflow-hidden shadow-md"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
@@ -166,13 +166,13 @@ export function WebPlatform() {
                 return (
                   <motion.div 
                     key={index} 
-                    className="bg-white dark:bg-[#1a1a1a] rounded-lg p-4 hover:shadow-lg transition-all"
+                    className="bg-white dark:bg-[#1a1a1a] rounded-none p-4 hover:shadow-lg transition-all"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   >
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#3FA0D6] to-[#2F80B9] flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 rounded-none bg-[#1F6FA5] flex items-center justify-center mb-3">
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <h3 className="text-lg text-[#2F80B9] dark:text-[#3FA0D6] mb-1">{feature.title}</h3>
@@ -189,10 +189,10 @@ export function WebPlatform() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 1.1 }}
             >
-              <a href="mailto:info@ci-ville.com?subject=Demande%20de%20demo%20CI-VILLE" className="px-8 py-3 bg-gradient-to-r from-[#3FA0D6] to-[#2F80B9] text-white rounded-lg hover:shadow-lg transition-all">
+              <a href="mailto:infos@ci-ville.ca?subject=Demande%20de%20d%C3%A9monstration%20CI-VILLE" className="px-8 py-3 bg-[#1F6FA5] text-white rounded-none hover:shadow-lg transition-all">
                 {t('web.demo')}
               </a>
-              <a href="/impact-ci-ville" className="px-8 py-3 bg-white dark:bg-[#262626] border-2 border-[#2F80B9] dark:border-[#3FA0D6] text-[#2F80B9] dark:text-[#3FA0D6] rounded-lg hover:bg-white/80 dark:hover:bg-[#2a2a2a] transition-all">
+              <a href="/impact-ci-ville" className="px-8 py-3 bg-white dark:bg-[#262626] border-2 border-[#2F80B9] dark:border-[#3FA0D6] text-[#2F80B9] dark:text-[#3FA0D6] rounded-none hover:bg-white/80 dark:hover:bg-[#2a2a2a] transition-all">
                 {t('web.pricing')}
               </a>
             </motion.div>
