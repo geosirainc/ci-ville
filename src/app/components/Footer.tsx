@@ -115,10 +115,10 @@ export function Footer({ currentPath }: { currentPath: string }) {
             
             {/* Social Media */}
             <div className="flex gap-3 mt-6">
-              <a href="https://www.facebook.com/profile.php?id=61591631753943" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" className="w-9 h-9 rounded-none border border-white text-white flex items-center justify-center hover:bg-white hover:text-[#1F6FA5] transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61591631753943" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" className="w-9 h-9 rounded-full border border-white text-white flex items-center justify-center hover:bg-white hover:text-[#1F6FA5] transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://www.linkedin.com/company/ci-villepage/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" className="w-9 h-9 rounded-none border border-white text-white flex items-center justify-center hover:bg-white hover:text-[#1F6FA5] transition-colors">
+              <a href="https://www.linkedin.com/company/ci-villepage/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" className="w-9 h-9 rounded-full border border-white text-white flex items-center justify-center hover:bg-white hover:text-[#1F6FA5] transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>

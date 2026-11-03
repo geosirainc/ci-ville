@@ -94,7 +94,7 @@ export function MobileApp() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   >
-                    <div className="w-10 h-10 flex-shrink-0 rounded-none bg-[#1F6FA5] flex items-center justify-center shadow-md">
+                    <div className="w-10 h-10 flex-shrink-0 rounded-full bg-[#1F6FA5] flex items-center justify-center shadow-md">
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <div>

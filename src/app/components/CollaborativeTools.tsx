@@ -59,7 +59,7 @@ export function CollaborativeTools() {
             <div className="relative z-10 flex-1">
               <div className="flex items-center justify-between gap-4 mb-6">
                 <img src={logoComplete} alt="CI-VILLE" className="h-10 w-auto brightness-0 invert" />
-                <div className="w-12 h-12 rounded-none bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
                   <Smartphone className="w-7 h-7" />
                 </div>
               </div>
@@ -98,7 +98,7 @@ export function CollaborativeTools() {
             <div className="relative z-10 flex-1">
               <div className="flex items-center justify-between gap-4 mb-6">
                 <img src={logoComplete} alt="CI-VILLE" className="h-10 w-auto brightness-0 invert" />
-                <div className="w-12 h-12 rounded-none bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 flex-shrink-0">
                   <Monitor className="w-7 h-7" />
                 </div>
               </div>

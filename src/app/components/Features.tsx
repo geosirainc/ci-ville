@@ -146,7 +146,7 @@ export function Features() {
               >
                 <div className={`absolute top-0 left-0 w-full h-1 ${feature.hoverStripeClass} rounded-none opacity-0 group-hover:opacity-100 transition-opacity`}></div>
                 
-                <div className={`w-12 h-12 rounded-none ${feature.iconClass} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                <div className={`w-12 h-12 rounded-full ${feature.iconClass} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 
@@ -182,7 +182,7 @@ export function Features() {
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 >
                   <div className="flex items-center gap-3 mb-5">
-                    <div className="w-12 h-12 rounded-none bg-[#1F6FA5] flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#1F6FA5] flex items-center justify-center">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-2xl text-[#2F80B9] dark:text-[#3FA0D6]">{impact.title}</h4>

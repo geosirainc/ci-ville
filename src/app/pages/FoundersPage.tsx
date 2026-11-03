@@ -18,7 +18,7 @@ export function FoundersPage() {
   const { t } = useLanguage();
   const faits = [1, 2, 3];
   const etapes = [1, 2, 3, 4, 5, 6];
-  const avantages = [1, 2, 3, 4];
+  const avantages = [1, 2, 4];
   const engagements = [1, 2, 3, 4];
 
   return (
@@ -51,7 +51,7 @@ export function FoundersPage() {
             {etapes.map((n) => (
               <motion.li key={n} className="rounded-none bg-white dark:bg-[#1a1a1a] border border-[#d9e9f4] dark:border-white/10 p-6" {...reveal}>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="w-9 h-9 rounded-none bg-[#1F6FA5] text-white flex items-center justify-center">{n}</span>
+                  <span className="w-9 h-9 rounded-full bg-[#1F6FA5] text-white flex items-center justify-center">{n}</span>
                   <h3 className="text-xl text-[#173149] dark:text-white">{t(`founders.step${n}Title`)}</h3>
                 </div>
                 <p className="text-[#4A4A4A] dark:text-[#d4d4d4] leading-relaxed">{t(`founders.step${n}`)}</p>

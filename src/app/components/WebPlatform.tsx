@@ -172,7 +172,7 @@ export function WebPlatform() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   >
-                    <div className="w-10 h-10 rounded-none bg-[#1F6FA5] flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#1F6FA5] flex items-center justify-center mb-3">
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <h3 className="text-lg text-[#2F80B9] dark:text-[#3FA0D6] mb-1">{feature.title}</h3>

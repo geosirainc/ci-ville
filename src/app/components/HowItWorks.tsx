@@ -84,7 +84,7 @@ export function HowItWorks() {
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
               >
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-none bg-[#1F6FA5] flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-[#1F6FA5] flex items-center justify-center">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <span className="text-sm text-[#2F80B9] dark:text-[#3FA0D6]">0{index + 1}</span>

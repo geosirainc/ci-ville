@@ -49,7 +49,7 @@ export function FloatingButtons() {
         {/* Theme Toggle Button */}
         <button
           onClick={toggleTheme}
-          className="w-14 h-14 rounded-none bg-[#1F6FA5] text-white shadow-lg hover:shadow-xl transition-all flex items-center justify-center group"
+          className="w-14 h-14 rounded-full bg-[#1F6FA5] text-white shadow-lg hover:shadow-xl transition-all flex items-center justify-center group"
           aria-label="Toggle theme"
         >
           {isDark ? (
@@ -63,7 +63,7 @@ export function FloatingButtons() {
         {showScrollTop && (
           <button
             onClick={scrollToTop}
-            className="w-14 h-14 rounded-none bg-[#1F6FA5] text-white shadow-lg hover:shadow-xl transition-all flex items-center justify-center group animate-in fade-in slide-in-from-bottom-5 duration-300"
+            className="w-14 h-14 rounded-full bg-[#1F6FA5] text-white shadow-lg hover:shadow-xl transition-all flex items-center justify-center group animate-in fade-in slide-in-from-bottom-5 duration-300"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
