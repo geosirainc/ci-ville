@@ -50,7 +50,6 @@ const translations: Record<Language, Record<string, string>> = {
     'tools.webHoverData': 'Exportez vos données et vos rapports pour vos besoins internes.',
     'tools.android': 'Télécharger l’application Android',
     'tools.apple': 'Télécharger l’application Apple',
-    'tools.comingSoon': 'Bientôt disponible sur l’App Store',
     'tools.mobilePage': 'Voir la page Application mobile',
     'tools.webPage': 'Voir la page Application web',
 
@@ -289,7 +288,6 @@ const translations: Record<Language, Record<string, string>> = {
     'tools.webHoverData': 'Export your data and reports for internal use.',
     'tools.android': 'Download the Android app',
     'tools.apple': 'Download the Apple app',
-    'tools.comingSoon': 'Coming soon to the App Store',
     'tools.mobilePage': 'View the mobile app page',
     'tools.webPage': 'View the web app page',
 
