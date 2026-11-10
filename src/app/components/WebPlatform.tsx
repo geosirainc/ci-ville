@@ -59,7 +59,7 @@ export function WebPlatform() {
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
                   </div>
                   <div className="flex-1 bg-white dark:bg-[#1a1a1a] rounded-none mx-4 px-3 py-1 text-xs text-gray-500 dark:text-gray-300">
-                    https://plateforme.ci-ville.com
+                    https://app.ci-ville.ca
                   </div>
                 </div>
                 
